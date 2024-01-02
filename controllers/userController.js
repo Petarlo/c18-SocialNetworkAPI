@@ -21,7 +21,7 @@ const UserController = {
   },
 
   updateUserById(req, res) {
-    User.findOneAndUpdate(req.params.id, req.body, { new: true })
+    User.findOneAndUpdate({_id: req.params.userId }, req.body, { new: true, select: '-__v' })
       .then(userData => {
         if (!userData) {
           return res.status(404).json({ message: 'User not found' });
@@ -32,7 +32,7 @@ const UserController = {
   },
 
   deleteUserById(req, res) {
-    User.findOneAndDelete(req.params.id)
+    User.findOneAndDelete({_id: req.params.userId})
       .then(userData => {
         if (!userData) {
           return res.status(404).json({ message: 'User not found' });
