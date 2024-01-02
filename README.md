@@ -27,7 +27,7 @@
   ## Usage
   GIF + Walkthrough link is below...
   ![GIF Demo](./public/GIFdemo.gif)
-  ![Walkthrough Link](https://drive.google.com/file/d/1A8ria-dwW9d76HHVh1aIe2oRak7MaYc0/view)
+ ### Link to Video demonstration (https://drive.google.com/file/d/1A8ria-dwW9d76HHVh1aIe2oRak7MaYc0/view)
 
 
   ## Licenses
